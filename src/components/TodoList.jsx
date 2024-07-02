@@ -4,6 +4,8 @@ import TodoItem from './TodoItem';
 
 const TodoList = () => {
 
+    // here we take data from use selector and also to checking its status
+
     const filteredTodos = useSelector((state) => {  
         const todos = state.todos;
         const filter = state.filter;

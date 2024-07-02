@@ -10,6 +10,7 @@ const FilterButton = () => {
     const handleFilter = (filter) => {
         dispatch(filterTodo(filter))
     }
+// this block of code is used verify its status
 
     return (
         <div className='flex space-x-4 items-center'>

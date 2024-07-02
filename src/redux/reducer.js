@@ -7,7 +7,6 @@ const initialState = {
 }
 
 const todoReducer = (state = initialState, action) => {
-    console.log(action, "actionin reducer")
     switch (action.type) {
         case ADD_TODO:
             return {
@@ -57,12 +56,11 @@ const todoReducer = (state = initialState, action) => {
             }
         case EDIT_TODO_ITEM:
             return {
-                todos: state.todos.map((itme, index) => {
-                    console.log(itme < "itme")
+                todos: state.todos.map((item, index) => {
                     if (index === action.payload.id) {
-                        return { ...itme, todos: action.payload.todos }
+                        return { ...item, todos: action.payload.todos }
                     }
-                    return itme;
+                    return item;
                 }),
                 filter: state.filter,
                 searchTerm: state.searchTerm
