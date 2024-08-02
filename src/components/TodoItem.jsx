@@ -20,7 +20,8 @@ const TodoItem = ({ todo, index }) => {
 
     }
 
-
+//  in thsi section we did all opertions  remove toggle and edit , in edit we use state to show particular section on edit function
+//   we use use ref hook to take current value 
 
     const renderForm = () => {
         return (
